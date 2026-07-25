@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_API_URL || 'https://woodly-backend-v8fa.onrender.com/api',
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
